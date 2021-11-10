@@ -1,3 +1,5 @@
+// How props are used
+
 import React from "react";
 
 interface ChildProps {

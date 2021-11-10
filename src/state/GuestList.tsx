@@ -1,8 +1,10 @@
+// How to use types with state logic
+
 import { useState } from "react";
 
 const GuestList: React.FC = () => {
   const [name, setName] = useState("");
-  const [guests, setGuests] = useState<string[]>([]);
+  const [guests, setGuests] = useState<string[]>([]); // here we define the type of state
 
   const onClick = () => {
     setGuests([...guests, name]);
